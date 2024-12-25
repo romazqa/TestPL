@@ -8,7 +8,7 @@ def read_circle_data(circle_file):
         radius = float(file.readline())
         if not (-10 ** 38 <= x <= 10 ** 38 and -10 ** 38 <= y <= 10 ** 38):
             raise ValueError("Координаты должны быть в диапазоне от -10^38 до 10^38")
-        if not (0 < radius <= 10 ** 38):  # Добавлена проверка радиуса
+        if not (0 < radius <= 10 ** 38):  
             raise ValueError("Радиус должен быть больше 0 и не превышать 10^38")
     return (x, y, radius)
 
