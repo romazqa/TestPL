@@ -18,9 +18,9 @@ if __name__ == "__main__":
 
     try:
         with open(filename, 'r') as f:
-            for line in f:  # Итерируемся по строкам файла
+            for line in f: 
                 try:
-                    num = int(line.strip()) # Преобразуем каждую строку в число и удаляем пробелы/переносы строк
+                    num = int(line.strip()) 
                     nums.append(num)
                 except ValueError:
                     print(f"Ошибка: Неверный формат данных в строке: '{line.strip()}'. Пропускаем строку.")
